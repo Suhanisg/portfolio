@@ -1,0 +1,135 @@
+.experience {
+  background: var(--color-bg-alt);
+}
+
+.timeline {
+  position: relative;
+}
+
+.timeline__rail {
+  position: absolute;
+  left: 7px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: var(--color-border);
+}
+
+.timeline__item {
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 32px;
+}
+
+.timeline__item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline__dot {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  box-shadow: 0 0 0 5px var(--color-accent-soft);
+}
+
+.timeline-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 34px 36px;
+  box-shadow: var(--shadow-card);
+}
+
+.timeline-card__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.timeline-card__head h3 {
+  font-size: 21px;
+}
+
+.timeline-card__company {
+  color: var(--color-text-soft);
+  font-size: 15px;
+  margin-top: 4px;
+}
+
+.timeline-card__period {
+  font-size: 13.5px;
+  color: var(--color-accent-dark);
+  background: var(--color-accent-soft);
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.timeline-card__summary {
+  color: var(--color-text-soft);
+  margin-top: 18px;
+  font-size: 15.5px;
+}
+
+.timeline-card__list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.timeline-card__list li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 15px;
+  color: var(--color-text);
+}
+
+.timeline-card__list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-accent);
+}
+
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.tag {
+  font-size: 13px;
+  font-weight: 500;
+  padding: 6px 13px;
+  border-radius: 999px;
+  border: 1px solid var(--color-border);
+  color: var(--color-text-soft);
+  background: var(--color-bg);
+}
+
+.timeline-card__letter {
+  margin-top: 20px;
+}
+
+@media (max-width: 640px) {
+  .timeline-card {
+    padding: 26px 22px;
+  }
+
+  .timeline-card__period {
+    order: 3;
+  }
+}

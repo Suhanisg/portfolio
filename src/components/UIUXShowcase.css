@@ -1,0 +1,47 @@
+.uiux {
+  background: var(--color-bg);
+}
+
+.uiux__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.uiux-card__media {
+  aspect-ratio: 16 / 11;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  background: linear-gradient(155deg, var(--color-accent-soft), var(--color-bg-alt));
+  margin-bottom: 18px;
+}
+
+.uiux-card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.uiux-card h3 {
+  font-size: 18px;
+}
+
+.uiux-card__focus {
+  color: var(--color-text-soft);
+  font-size: 14.5px;
+  margin-top: 6px;
+}
+
+.uiux-card__tools {
+  font-size: 13px;
+  color: var(--color-accent-dark);
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+@media (max-width: 800px) {
+  .uiux__grid {
+    grid-template-columns: 1fr;
+  }
+}
