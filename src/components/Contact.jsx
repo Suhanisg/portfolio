@@ -27,11 +27,10 @@ export default function Contact() {
     <section id="contact" className="section contact">
       <div className="container contact__grid">
         <div className="contact__intro">
-          <p className="section-kicker">Contact</p>
-          <h2>Let's Work Together</h2>
+                    <p className="section-kicker">Contact</p>
+          <h2>Let's Build Something Together</h2>
           <p className="contact__text">
-            I'm currently open to opportunities in Frontend Development, Full Stack
-            Development and UI/UX-focused roles.
+            Have a project, website idea or job opportunity? I'd love to hear from you.
           </p>
 
           <ul className="contact__details">

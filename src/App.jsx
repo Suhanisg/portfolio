@@ -4,7 +4,8 @@ import About from './components/About'
 import Experience from './components/Experience'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
-// import UIUXShowcase from './components/UIUXShowcase'
+import Services from './components/Services'
+// import ClientCTA from './components/ClientCTA'
 import Certifications from './components/Certifications'
 import ResumeCTA from './components/ResumeCTA'
 import Contact from './components/Contact'
@@ -20,7 +21,8 @@ export default function App() {
         <Experience />
         <Skills />
         <Projects />
-        {/* <UIUXShowcase /> */}
+        <Services />
+        {/* <ClientCTA /> */}
         <Certifications />
         <ResumeCTA />
         <Contact />

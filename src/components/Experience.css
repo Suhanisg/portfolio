@@ -1,7 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,500&family=Inter:wght@400;500;600&display=swap');
+
 .experience {
-  background: var(--color-bg-alt);
+  --e-ink: #1f1418;
+  --e-ink-soft: #5e4d52;
+  --e-accent: #d9694f;
+  --e-accent-soft: #fbe3d9;
+  --e-dark: #3a1626;
+  --e-border: #ecd6cb;
+
+  position: relative;
+  overflow: hidden;
+  font-family: 'Inter', sans-serif;
+  color: var(--e-ink);
+  background:
+    radial-gradient(520px 520px at 0% 0%, rgba(255, 255, 255, 0.6), transparent 65%),
+    radial-gradient(460px 460px at 100% 100%, rgba(244, 196, 176, 0.45), transparent 65%),
+    linear-gradient(135deg, #fdeee6 0%, #fcebe2 50%, #fdf3ec 100%);
 }
 
+/* ---------- Heading ---------- */
+.experience .section-kicker {
+  color: var(--e-accent);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.experience .section-head h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: clamp(32px, 4vw, 44px);
+  letter-spacing: -0.01em;
+  color: var(--e-ink);
+}
+
+/* ---------- Timeline ---------- */
 .timeline {
   position: relative;
 }
@@ -12,7 +46,7 @@
   top: 8px;
   bottom: 8px;
   width: 2px;
-  background: var(--color-border);
+  background: linear-gradient(to bottom, var(--e-accent), rgba(217, 105, 79, 0.15));
 }
 
 .timeline__item {
@@ -32,16 +66,22 @@
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background: var(--color-accent);
-  box-shadow: 0 0 0 5px var(--color-accent-soft);
+  background: var(--e-accent);
+  box-shadow: 0 0 0 5px var(--e-accent-soft);
 }
 
 .timeline-card {
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.74);
+  border: 1px solid rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
   padding: 34px 36px;
-  box-shadow: var(--shadow-card);
+  box-shadow: 0 12px 34px rgba(150, 80, 60, 0.09);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.timeline-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 38px rgba(150, 80, 60, 0.15);
 }
 
 .timeline-card__head {
@@ -53,29 +93,33 @@
 }
 
 .timeline-card__head h3 {
-  font-size: 21px;
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--e-ink);
 }
 
 .timeline-card__company {
-  color: var(--color-text-soft);
+  color: var(--e-ink-soft);
   font-size: 15px;
   margin-top: 4px;
 }
 
 .timeline-card__period {
-  font-size: 13.5px;
-  color: var(--color-accent-dark);
-  background: var(--color-accent-soft);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--e-accent);
+  background: var(--e-accent-soft);
   padding: 6px 14px;
   border-radius: 999px;
-  font-weight: 600;
   white-space: nowrap;
 }
 
 .timeline-card__summary {
-  color: var(--color-text-soft);
+  color: var(--e-ink-soft);
   margin-top: 18px;
-  font-size: 15.5px;
+  font-size: 15px;
+  line-height: 1.65;
 }
 
 .timeline-card__list {
@@ -88,8 +132,9 @@
 .timeline-card__list li {
   position: relative;
   padding-left: 20px;
-  font-size: 15px;
-  color: var(--color-text);
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: var(--e-ink);
 }
 
 .timeline-card__list li::before {
@@ -100,7 +145,7 @@
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: var(--color-accent);
+  background: var(--e-accent);
 }
 
 .tag-row {
@@ -111,17 +156,31 @@
 }
 
 .tag {
-  font-size: 13px;
+  font-size: 12.5px;
   font-weight: 500;
   padding: 6px 13px;
   border-radius: 999px;
-  border: 1px solid var(--color-border);
-  color: var(--color-text-soft);
-  background: var(--color-bg);
+  border: 1px solid var(--e-border);
+  color: var(--e-ink-soft);
+  background: rgba(255, 255, 255, 0.85);
 }
 
+/* "View Experience Letter" button */
 .timeline-card__letter {
   margin-top: 20px;
+  background: transparent;
+  color: var(--e-accent);
+  border: 1px solid var(--e-accent);
+  border-radius: 999px;
+  font-weight: 600;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.timeline-card__letter:hover {
+  background: var(--e-dark);
+  border-color: var(--e-dark);
+  color: #fff;
+  transform: translateY(-2px);
 }
 
 @media (max-width: 640px) {

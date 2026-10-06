@@ -29,8 +29,8 @@ export default function Navbar() {
           ))}
         </nav>
 
-               <a href={profile.resume} className="btn btn-primary btn-sm navbar__cta" target="_blank" rel="noreferrer">
-          Download Resume
+                    <a href="#contact" className="btn btn-primary btn-sm navbar__cta">
+          Let's Work Together
         </a>
 
         <button
@@ -53,15 +53,12 @@ export default function Navbar() {
             </a>
           ))}
         </nav>
-        <a
-                 
-          href={profile.resume}
+               <a
+          href="#contact"
           className="btn btn-primary"
-          target="_blank"
-          rel="noreferrer"
           onClick={() => setOpen(false)}
         >
-          Download Resume
+          Let's Work Together
         </a>
       </div>
     </header>

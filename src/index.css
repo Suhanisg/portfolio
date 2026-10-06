@@ -1,14 +1,14 @@
 :root {
-  /* Color tokens */
-  --color-bg: #F8F9FC;
-  --color-bg-alt: #F1F2FA;
+  /* Color tokens — warm cream / black / coral */
+  --color-bg: #FBF3EA;
+  --color-bg-alt: #F5E8DA;
   --color-surface: #FFFFFF;
-  --color-text: #111827;
-  --color-text-soft: #6B7280;
-  --color-border: #E5E7EB;
-  --color-accent: #5B5FEF;
-  --color-accent-dark: #4548C7;
-  --color-accent-soft: #EEEEFD;
+  --color-text: #1C1A17;
+  --color-text-soft: #71675C;
+  --color-border: #E8DCCB;
+  --color-accent: #aa5844;
+  --color-accent-dark: #ab7d6c;
+  --color-accent-soft: #FBE2D4;
 
   /* Type */
   --font-display: 'Fraunces', Georgia, serif;
@@ -19,8 +19,8 @@
   --radius-sm: 12px;
   --radius-md: 18px;
   --radius-lg: 24px;
-  --shadow-card: 0 1px 2px rgba(17, 24, 39, 0.04), 0 8px 24px rgba(17, 24, 39, 0.06);
-  --shadow-card-hover: 0 4px 10px rgba(17, 24, 39, 0.06), 0 16px 36px rgba(91, 95, 239, 0.12);
+  --shadow-card: 0 1px 2px rgba(28, 26, 23, 0.05), 0 8px 24px rgba(28, 26, 23, 0.07);
+  --shadow-card-hover: 0 4px 10px rgba(28, 26, 23, 0.07), 0 16px 36px rgba(226, 109, 79, 0.16);
 }
 
 * { box-sizing: border-box; }
@@ -85,7 +85,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 }
 
 .section {
-  padding: 84px 0;
+  padding: 40px 0;
 }
 
 @media (max-width: 900px) {
@@ -142,20 +142,20 @@ ul { margin: 0; padding: 0; list-style: none; }
 }
 
 .btn-primary {
-  background: var(--color-accent);
-  color: #fff;
-  box-shadow: 0 8px 20px rgba(91, 95, 239, 0.28);
+  background: var(--color-text);
+  color: var(--color-bg);
+  box-shadow: 0 8px 20px rgba(28, 26, 23, 0.22);
 }
 
 .btn-primary:hover {
-  background: var(--color-accent-dark);
+  background: #000;
   transform: translateY(-1px);
 }
 
 .btn-secondary {
   background: transparent;
   color: var(--color-text);
-  border-color: var(--color-border);
+  border-color: var(--color-text);
 }
 
 .btn-secondary:hover {
@@ -170,7 +170,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 }
 
 .btn-ghost:hover {
-  background: #E2E3FB;
+  background: #F6D3BF;
 }
 
 .btn-sm {
