@@ -44,6 +44,8 @@
 }
 
 .hero__badge {
+  position: relative;
+  z-index: 1;
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -260,7 +262,7 @@
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 960px) {
   .hero {
-    padding-top: 110px;
+    padding-top: 140px;   /* header + mobile menu ke neeche badge aaye */
   }
 
   .hero__inner {
@@ -290,6 +292,10 @@
 }
 
 @media (max-width: 520px) {
+  .hero {
+    padding-top: 135px;
+  }
+
   .hero__btn {
     width: 100%;
     justify-content: center;
