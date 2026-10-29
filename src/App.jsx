@@ -10,6 +10,7 @@ import Certifications from './components/Certifications'
 import ResumeCTA from './components/ResumeCTA'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+   import UIUXDesign from './components/Uiuxdesign';
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
         <Experience />
         <Skills />
         <Projects />
+         <UIUXDesign />
         <Services />
         {/* <ClientCTA /> */}
         <Certifications />
